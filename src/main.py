@@ -23,5 +23,5 @@ for campo, coordenadas_campo in csv_data_processor.img_data_coord.items():
  
 file_name = img_path.split('/')[-1]
 
-imagem.save(f"../io/filled_records/{file_name.removesuffix(".png")}.png")
+imagem.save(f"../io/filled_records/{file_name.removesuffix(".png")}_editada.png")
 imagem.show()

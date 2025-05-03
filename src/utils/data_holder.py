@@ -22,12 +22,10 @@ class dataHolder:
     
     def get_csv_line_as_dict(self, csv_line_id: str) -> dict:
         try:
-            row = self.data.loc[self.data['nu_notific'] == csv_line_id]
-            
+            row = self.data.loc[self.data['nu_notific'] == csv_line_id] # pega uma linha do csv, ou seja, pega os dados de um registro da ficha
             if not row.empty:
-                row_data = row.iloc[0]
-                
-                result_dict = {col: str(row_data[col]) for col in self.cols}
+                row_data = row.iloc[0] # row tem uma lista com o registro | row[0] tem o registro
+                result_dict = {col: str(row_data[col]) for col in self.cols} # {'coluna do csv': 'campo da coluna'}
                 
                 return result_dict
             
