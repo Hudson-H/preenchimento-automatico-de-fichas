@@ -48,11 +48,10 @@ após isso, uma imagem com os campos da ficha preenchidos será aberta.
 │   │   └── Botulismo_v5_editada.png
 │   └── records
 │       └── Botulismo_v5.png
-├── relatorio_pacientes_transfundidos.pdf
 └── src
     ├── main.py
     └── utils
-        ├── contants.py
+        ├── constants.py
         ├── data_holder.py
         └── pre_proc_string.py
 ```
